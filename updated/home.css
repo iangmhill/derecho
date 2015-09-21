@@ -1,0 +1,51 @@
+.line-separator{
+
+height:5px;
+
+background:#717171;
+
+border-bottom:1px solid #313030;
+}
+
+
+/* body {
+    background-image: url("http://www.smartbrary.com/uploads/background_image8.jpg ");
+      width:100%;
+    height:100%;
+} */
+
+#background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+para {
+    background-color: rgb(255,0,255);
+}
+
+h2 {
+    color: F0FFFF;
+}
+
+
+/* http://www.metaxis.com/EFSAInventory/images/abstract_background_light-grey.jpg  */
+
+#example1 {
+    padding: 30px;
+    background: gray;
+}
+
+
+
+p{
+    color: FloralWhite;
+}
