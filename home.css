@@ -50,6 +50,8 @@ h3 {
 
 
 p{
+    padding: 30px;
+    background: gray;
     color: FloralWhite;
 }
 
