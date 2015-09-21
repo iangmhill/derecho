@@ -1,50 +1,47 @@
 <!DOCTYPE html>
-
-<!-- define angular app -->
-<html ng-app="scotchApp">
-
+<html>
 <head>
-  <!-- SCROLLS -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+   <link rel="stylesheet" href="home.css">
+    <!-- CSS (load bootstrap) -->
+       <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+        .navbar { border-radius:0; }
+    </style>
 
-  <!-- SPELLS -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-  <script src="script.js"></script>
+    <!-- JS (load angular, ui-router, and our custom js file) -->
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
 </head>
 
-<!-- define angular controller -->
-<body ng-controller="mainController">
+<div id="background">
+    <img src="http://www.smartbrary.com/uploads/background_image8.jpg" class="stretch" alt="" />
+</div>
 
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/">Angular Routing Example</a>
-      </div>
+<!-- apply our angular app to our site -->
+<body ng-app="routerApp">
 
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-        <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+ <!-- NAVIGATION -->
+<nav class="navbar navbar-inverse" role="navigation">
+<div class="navbar-header">
+    <a class="navbar-brand" ui-sref="#">Derecho</a>
+</div>
+    <div class="center">
+      <ul class="nav navbar-nav">
+          <li><a ui-sref="home">Home</a></li>
+          <li><a ui-sref="about">Inspirational Designs</a></li>
       </ul>
     </div>
-  </nav>
+</nav> 
 
-  <div id="main">
-  
-    <!-- angular templating -->
-    <!-- this is where content will be injected -->
-    <div ng-view></div>
+
+<!-- MAIN CONTENT -->
+<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+<div class="container">
+    <div ui-view>
+     </div>
     
-  </div>
-  
-  <footer class="text-center">
-    <p>View the tutorial on <a href="http://scotch.io/tutorials/javascript/single-page-apps-with-angularjs-routing-and-templating">Scotch.io</a></p>
-  
-    <p>View a tutorial on <a href="http://scotch.io/tutorials/javascript/animating-angularjs-apps-ngview">Animating Your Angular Single Page App</a></p>
-  </footer>
-  
-</body>
+</div>
 
+</body>
 </html>

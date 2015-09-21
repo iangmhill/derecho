@@ -2,15 +2,15 @@ var routerApp = angular.module('routerApp', ['ui.router']);
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
     
-    $urlRouterProvider.otherwise('/home');
+	$urlRouterProvider.otherwise('/home');
     
     $stateProvider
         
         // HOME STATES AND NESTED VIEWS ========================================
         .state('home', {
-            url: '/home',
-            templateUrl: 'partial-home.html'
-        })
+		url: '/home',
+		    templateUrl: 'partial-home.html'
+		    })
         
         // // nested list with custom controller
         // .state('home.list', {
@@ -29,19 +29,19 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
         .state('about', {
-            url: '/about',
-            views: {
-                '': { templateUrl: 'partial-about.html' },
-                'columnOne@about': { template: 'Look I am a column!' },
-                'columnTwo@about': { 
-                    templateUrl: 'table-data.html',
-                    controller: 'scotchController'
-                }
-            }
+		url: '/about',
+		    views: {
+		    '': { templateUrl: 'partial-about.html' },
+			'columnOne@about': { template: 'Look I am a column!' },
+			    'columnTwo@about': { 
+				templateUrl: 'table-data.html',
+				    controller: 'scotchController'
+				    }
+		}
             
-        });
+	    });
         
-});
+    });
 
 // routerApp.controller('scotchController', function($scope) {
     
