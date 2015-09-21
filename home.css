@@ -33,7 +33,7 @@ para {
 }
 
 h2 {
-    color: F0FFFF;
+    color: #F0FFFF;
 }
 
 h3 {
@@ -50,7 +50,7 @@ h3 {
 
 
 p{
-    padding: 30px;
+    padding: 10px;
     background: gray;
     color: FloralWhite;
 }
