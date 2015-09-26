@@ -16,6 +16,13 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         url: '/inspirationaldesigns',
      templateUrl: 'partial-inspirationaldesigns.html'
             
+        })
+        
+            .state('needsanalysis', {
+        url: '/needsanalysis',
+     templateUrl: 'partial-needsanalysis.html'
+            
         });
+        
         
     });
