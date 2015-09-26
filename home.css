@@ -8,11 +8,27 @@ border-bottom:1px solid #313030;
 }
 
 
-/* body {
+body {
     background-image: url("http://www.smartbrary.com/uploads/background_image8.jpg ");
       width:100%;
     height:100%;
-} */
+} 
+
+
+#main {
+padding: 5px;
+padding-left:  15px;
+padding-right: 15px; 
+background-color:#A9A9A9;
+ border-radius: 0 0 5px 5px ;
+}
+
+/* h1 {
+    font-family: Georgia, serif;
+    border-bottom: 3px solid #cc9900;
+    color: #996600;
+    font-size: 30px;
+}  */
 
 #background {
     width: 100%; 
@@ -37,7 +53,7 @@ h2 {
 }
 
 h3 {
-    color: #FFFFFF;
+    color:#303030;
 }
 
 /* http://www.metaxis.com/EFSAInventory/images/abstract_background_light-grey.jpg  */
