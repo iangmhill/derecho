@@ -53,10 +53,6 @@ html, body {
   background-color: white;
   height: 4px;
 }
-.mdl-demo main > .mdl-layout__tab-panel {
-  padding: 8px;
-  padding-top: 48px;
-}
 .mdl-demo .mdl-card {
   height: auto;
   display: -webkit-box;
@@ -266,6 +262,12 @@ html, body {
   float: right;
   margin: 20px 20px;
 }
+.mdl-layout__tab-panel {
+  padding: 8px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
 @media screen and (max-width: 1024px) {
   .mdl-layout__header-row {
     height: 42 px; } }
