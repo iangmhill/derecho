@@ -63,7 +63,7 @@
               <p>
               A very rough possible implementation of this project can be found in the sketch below.
               </p>
-              <div class="mdl-shadow--2dp" style="float: right; margin: 20px 20px;">
+              <div class="mdl-shadow--2dp float-image">
                 <img src="images/projectbriefsketch.jpg" width="400px"/>
               </div>
               <p>
@@ -283,6 +283,117 @@
           </section>
 
         </div>
+
+        <div class="mdl-layout__tab-panel" id="needs">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Needs Analysis</h4>
+
+              <h5>The Problem</h5>
+
+              <p>
+                What does it mean for something to be “Olin-esque?” If one were to ask Oliners, one would hear many different answers to this question. Some students will quote the Honor Code while others cite their experiences in class, but consistently, the Olin community values cooperation, communication, and respect for others.
+              </p>
+              <p>
+                Every year, our current process for assigning students to dorm rooms invites students to abandon one or more of these values. We call this process Room Draw. In such a close knit community, students care deeply about who they will be rooming with and near. Students look forward to planning suites and hallways with their friends around a certain culture or theme, and they get emotionally attached to plans and potential futures. This high stress situation makes communicating intentions absolutely critical.
+              </p>
+              <p>
+                As a elegant and intuitive communication tool, our project aims to encourage collaboration by early communication. Through better communication, student can better understand each other’s intentions and resolve potential conflicts in a respectful and thoughtful way.
+              </p>
+              <p>
+                In the room draw process, we have identified three different stages: people deciding who they want to room with within a suite or double, people deciding who they are living with, and finally the stage where everything becomes official, and student life is in charge of placing remaining stragglers. A diagram of these stages can be seen below:
+              </p>
+            </div>
+
+              <div class="mdl-cell mdl-cell--12-col mdl-shadow--2dp" style="margin:20px 0 30px 0;">
+                <img src="images/three_phases.jpg" width="100%"/>
+              </div>
+
+            <div class="mdl-cell mdl-cell--12-col">
+              <p>
+                Of these three stages, we are focusing on the second stage -- where students decide where they are living. In this stage, students generally know who their room/suitemates are, but have not finalized a dorm, hallway, or room. We have chosen this stage of the room draw process because in the first stage, many of the conversations can, and do, happen offline. In the second stage, however, we have the opportunity to make communication more open and have lower latency. Conversations about culture and where people are interested in living concern multiple suites and doubles, and we would like to provide a communication and planning tool to facilitate these conversations.
+              </p>
+
+              <h4>Who Matters</h4>
+
+              <p>
+                Although students at many campuses participate in room draw, we have elected not to make a room draw tool that aims to work for many different universities. There are multiple reasons that we have made this decision. The first reason is that room draw policies vary for every institution, and Olin’s room draw policy is very unique. At Wellesley and Harvey Mudd, for example all students or groups of students that are planning on living together receive a distinct rank, or order for their room draw process. In other words, every group of students knows exactly which other students outrank them and which they outrank. In this case, there is less room for communication -- people are not likely to compromise and communicate if they know immediately which person could take a contested room because of their rank. On the other hand, at Olin, room draw ranking is puts doubles and suites into groups where no double or suite knows the ranking of all the people within that group. This is possible because of Olin’s small size; at any larger school this would be a logistical nightmare. In Olin’s case, where there is no apparent winner for a contested space, communication and compromise are encouraged and required. While a planning tool that better enables communication for room draw might not be useless at an institution where the room draw policy does not encourage communication and compromise, the tool we plan to build would certainly be more useful at an institution like Olin. 
+              </p>
+              <a href="images/current_process.jpg">
+                <div class="mdl-shadow--2dp float-image">
+                  <img src="images/current_process.jpg" width="400px"/>
+                </div>
+              </a>
+              <p>
+                Additionally, at many other schools, the room draw process is very condensed -- while Olin’s room draw process lasts for months. At other schools, there is simply not enough time for the conversations that our tool would enable to play out. At these institutions, after rankings are assigned and students are told which residence hall they are living in (often decided by student life administrators using a combination of students’ class year, previous residence hall and space left in the desired residence hall) there is one night where students can select the room they are living in. Before this night, unlike at Olin, it is not expected that a preference for a specific room is made public. In fact, at some schools, some rooms or residence halls are so much prefered that students scheme to get themselves and their friends into a specific hall or room. In cases like these communication is very much discouraged. In this case, a tool for making room draw a more communication friendly process would be entirely unhelpful, and designing a communication tool for such a case would be a waste of time.
+              </p>
+              <p>
+                Finally, we have heard in our conversations with students from different schools that their dorm culture is somewhat equivalent to our hallway culture. This means that, at another school, living in the “right” dorm is much more important than living the the “right” room or hallway within that dorm. At Olin, almost the opposite is true -- the dorm does matter, but it is incredibly important for students to be living in the “right” hallway with all their friends. Everything related to room draw at Olin is on a micro scale with many emotions confined to a small space. Here it is easy to blame other people as opposed to the system and this makes a room draw tool customized to Olin valuable.
+              </p>
+              <p>
+                This product will be aimed at Olin students who participate in the room draw process. This excludes Olin students who are R2s as well as those who have not found a suite/room mate before the suite and double selection deadlines. In our conversations around the room draw process, we have found that there are four distinct types of users. 
+              </p>
+              <ul class="">
+                <h5>Hallway Organizer</h5>
+                <p>
+                  These students are in charge of a group of either suites or doubles. They take on responsibility for organizing and placing groups of students.
+                </p>
+                <p>
+                  During the room draw process, hallway bosses are stressed out. They not only have the responsibility of one room or suite during room draw, but sometimes an entire hallway that is focused on living together. This means that they not only have to keep tabs on what other hallway bosses are doing, but also other independents who might have more points than any member of the group they are organizing. Their entire plan can be derailed with one unanticipated pin placement, and hallway bosses are very worried that this will happen in the room draw process.
+                </p>
+
+                <h5>Hallway Member</h5>
+                <p>
+                  These are students that are a part of a larger hallway organization -- a group of friends all planning on living together. These students are just planning on living where their hallway boss tells them to. 
+                </p>
+                <p>
+                  During the room draw process, sheep are relatively relaxed -- they know that they’ll be living in a hallway with their friends, with the culture that they want, and there’s someone else in charge of organizing this. Although they do care about living with their friends, they also know that someone else is responsible for organizing this.
+                </p>
+
+                <h5>Disengaged</h5>
+                <p>
+                  These people are not engaged in the room draw process at all. They do not care who they are living with and where they are living. They are not a part of a group that wants to live together.
+                </p>
+                <p>
+                  During the room draw process, laid back independents goes with the flow. They may never lock in a roommate or go through the normal room draw process. As long as they wind up with a room before the semester starts, they are not concerned.
+                </p>
+
+                <h5>Passionate Independent</h5>
+                <p>
+                  These students do care very much about where they are living or the culture of their hallway, but are not a part of a group.
+                </p>
+                <p>
+                  These students may have been kicked out of a hallway group or suite due to size constraints or care strongly about some outside factor. This factors include, but aren’t limited to, proximity to first years, sound, alcohol culture, natural lighting, proximity to friends, distance from enemies, ceiling height, and floor level.
+                </p>
+              </ul>
+              <p>
+                In designing this tool, we know that we need to satisfy the passionate independent. This is the person who cares very much about the hallway culture or which hallway are living in, but does not have as many offline avenues to access this information as people who are a part of a group might. The laid back independent can choose not to participate in these conversations, and the sheep and hallway boss can have these conversations offline. It is the person who does not have a group that they are living with, but cares very much about the culture and people in their hallway that needs these communications to happen, or at least be available, online in an accessible place. 
+              </p>
+
+              <h4>Requirements</h4>
+              <p>
+                Rising sophomores, juniors and seniors should be able to use the tool to indicate which rooms they are interested in as well as to gauge other students’ preferences for doubles or suites in East Hall or West Hall.
+              </p>
+              <p>
+                The tool should allow people to view and submit preferences in hallway culture because we found in most of our interviews with our users that hallway culture is an important determinant in the rooms they choose. Currently, there is no easily accessible method for making discussions on hallway culture known and the intent of a certain group of students clear.  Indicating hallway culture will allow users to view and state their lifestyle such as when they prefer to sleep and how loud they are as well as their preferred drinking culture.  They could also share their ideas on activities their hallway can do. We think it is essential that users have the option of not stating their hallway culture because they may not feel comfortable about having others view that information or they may be more laid back in the room draw process and do not care about the culture of the hallway they will be living in. We will need to take care to not force people to be more engaged in the room draw process than they want to be, to ensure that we do not alienate the laid back independents.
+              </p>
+              <p>
+                Private group chats among people who are interested to live in a certain hallway will allow them to have conversations on the kind of hallway they want such as deciding whether people can use the hallway for parties or whether there should be no loud music after a certain time. Those conversations before the actual formation of a hallway, can help determine whether people would want to live in that hallway or not.
+              </p>
+
+              <h4>Impact of a Successful Solution</h4>
+
+              <p>
+                We realize that the goal of this class is not to make a prototype that actually works, but if we design a successful and approachable user experience, we will make an effort to build a fully functioning prototype of our product.
+              </p>
+              <p>
+                In a world where Oliners use our tool to improve communication around Room Draw, students are rarely surprised to learn of conflicts over rooms. Room Draw no longer causes grudges and stress, and students approach the process confident that the outcome will be agreeable. Every Oliner is invested in making sure their peers are happy where they are rooming, and everyone looks out for eachother.
+              </p>
+            </div>
+
+          </section>
+        </div>
+
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
             <center><img width="200px" src="images/Olin_Identifier_Standard_White.png"></center>
