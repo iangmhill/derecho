@@ -45,7 +45,9 @@
           <a href="#designs" class="mdl-layout__tab">Inspirational Designs</a>
           <a href="#needs" class="mdl-layout__tab">Needs Analysis</a>
           <a href="#designdev" class="mdl-layout__tab">Design Development</a>
-          <a href="#prototype" class="mdl-layout__tab blinking-text">Prototype</a>
+          <a href="#prototype" class="mdl-layout__tab">Prototype</a>
+          <a href="#heuristic" class="mdl-layout__tab">Heuristic Evaluation</a>
+          <a href="#designrefinement" class="mdl-layout__tab">Design Refinement</a>
           <a href="#effort" class="mdl-layout__tab">Effort Chart</a>
         </div>
       </header>
@@ -516,6 +518,34 @@
                     <td>30</td>
                     <td>25</td>
                   </tr>
+                  <tr>
+<!--                     <td class="mdl-data-table__cell--non-numeric">Design Refinement Wireframes</td>
+                    <td>25</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Design Refinement Prototype</td>
+                    <td>25</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Design Refinement Presentation</td>
+                    <td>25</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>25</td>
+                  </tr>
+                  <tr>
+                    <td class="mdl-data-table__cell--non-numeric">Design Refinement HR Writeup</td>
+                    <td>25</td>
+                    <td>20</td>
+                    <td>30</td>
+                    <td>25</td>
+                  </tr> -->
                 </tbody>
               </table>
               </center>
@@ -722,6 +752,708 @@
           </section>
         </div><!-- END DESIGN DEVELOPMENT -->
 
+        <div class="mdl-layout__tab-panel" id="heuristic">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Group Heuristic Evaluation</h4>
+              <h6><i>Bonnie Ishiguro, Marena Richardson, Chris Wallace, Susie Grimshaw</i></h6>
+              <p>
+                Overall we found the prototype design intuitive, and the idea of tags and ranking is compelling. There is a clear natural mapping between the map displayed on the website and the actual floor plans. Color is successfully used to convey information about the level of tag agreement with another room. Between the color coding and the room map, there is very little text necessary and most information is conveyed through visuals. Hovering over a room prompts feedback that clearly indicates you are getting information about the room you are currently hovering on.
+              </p>
+              <p>
+                There were parts of the prototype that confused us, and that represent possible areas of improvement. We encountered two issues with the buttons on the bottom right of the screen.  We were initially unsure about their functions, since we did not associate the quote icon with contact info, and the ?= icon was also unfamiliar.  These buttons also do not react in a significant way when you hover over them briefly, and there is no feedback when you click on them, which further obscures their use.  We found a few color-related violations.  The colors of the bottom right buttons match the high/low tag agreement colors, which falsely implies that they are correlated.  Additionally, the orange color of a pinned room looks like an incompatible tag match, which could be misleading.  The system around interacting with tags is not completely transparent.  It is not initially clear, for example, that you can add a new tag using the ‘Search for Tags’ field.  It is also unclear as to how people will know to rank themselves on any new tags that you create.
+              </p>
+              <ol>
+
+                <li>
+                  <b>
+                    [H1 Visibility of system status] (Severity 3) {Found by 3}
+                  </b>
+                  </br>
+                  <p>
+                    It is not initially clear that you can add custom tags, so I recommend indicating that explicitly on the dashboard. “Search for tags” maybe isn’t the right text for this field if it is meant to be a place where tags are added.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H5 Error Prevention] (Severity 2) {Found by 2}
+                  </b>
+                  </br>
+                  <p>
+                    If everyone can add tags, how to other people know to rank themselves on new tags?  Also, this system may lead to multiple similar tags that are all trying to answer the same questions.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and standards] (Severity 2) {Found by 3}
+                  </b>
+                  </br>
+                  <p>
+                    The word “notifications” does not make me think of direct messages.  I originally assumed notifications would inform you an action, such as another roommate pair placing a pin on your room.  Are these messages only visible to their direct recipients, or is there a group chat of sorts?  Have you planned the flow for sending and receiving messages?  (I realize that it is out of scope to simulate sending and receiving messages in this prototype, which would make the interaction with this section more clear.)
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H2 Match between system and the real world] (Severity 2) {Found by 2}
+                  </b>
+                  </br>
+                  <p>
+                    Recommend using meaningful icons instead of words to label the “pin,” “notifications,” and “settings” tabs to more quickly convey their purpose to the user.  Without thinking too hard about the words, I originally thought that “notification settings” was one tab, and I only ended up clicking on “settings” separately by accident.  As stated above, the meaning of “notifications” was not initially clear to me.  
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H2 Match between system and the real world] (Severity 2) {Found by 4}
+                  </b>
+                  </br>
+                  <p>
+                    The icons for “Compare tags” and “Show contact info” on the bottom right of the screen do not communicate their functions to me.  I needed to hover over the buttons to understand what they do.  The “pin” button, however, is clear because I can connect it with the physical pins we use on the foam core boards.  
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H1 Visibility of system status] (Severity 1) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    The floorplan image disappears when my browser window is about half size, which may be a little inconvenient for the user, or confusing if he or she does not realize that there is a floorplan available. 
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H10 Help and Documentation] (Severity 3) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    Overwhelmed initially. There are a lot of things on the screen and I’m not sure what to do first.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H3 User Control and Freedom] (Severity 2) {Found by 2}
+                  </b>
+                  </br>
+                  <p>
+                    Can I unpin myself?
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H2 Match between system and real world] (Severity 2) {Found by 4}
+                  </b>
+                  </br>
+                  <p>
+                    I was initially confused by the ? button on the bottom right. I realized after reading your documentation more carefully that it’s the compare tags button- I would have expected it to be a “help” button. 
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H1 Visibility of system status] (Severity 1) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    If no one is assigned to a room, the “ button doesn’t do anything
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H8 Aesthetic and minimalist design] (Severity 2) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    The buttons and fonts on the login / sign up screen clash with the rest of the website’s flat and sans serif design. Additionally, some of the text underneath the pin, notifications, settings is Times New Roman. This choice is fine if intentional, but it looks haphazard.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H9 Help users recognize, diagnose, and recover from errors] (Severity 3) {Found by 2}
+                  </b>
+                  </br>
+                  <p>
+                    Can I remove tags from my list?
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H1 Visibility of system status] (Severity 3) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    It is initially unclear to me whether the tags on the left represent my own ratings or just what I am using to compare to other’s ratings. How do I rate myself on these scales so that others can see how I compare to them? Can my scales be visually separated from the scales that I can mess with to see how different tag ratings correspond to others’ rooms?
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and standards] (Severity 2) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    Empty rooms and rooms with middle tag agreement should not be the same color. You should choose a new color for middle tag agreement. 
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H3 User control and Freedom] (Severity 0) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    Room says “EH” before I select one
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H8 Aesthetic and minimalist design] (Severity 1) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    Why are partying and movies defaults?
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and Standards] (Severity 1) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    I definitely thought in my head that orange was good and blue was bad. Like I saw the color key and everything but I still thought the opposite. But that might just be me. 
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and Standards] (Severity 2) {Found by 3}
+                  </b>
+                  </br>
+                  <p>
+                    Buttons on the bottom right look kind of like buttons, but I would expect some hover behavior to increase discoverability. 
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H7 Flexibility and efficiency of use] (Severity 2) {Found by 3}
+                  </b>
+                  </br>
+                  <p>
+                    Clicking pin and then a different room- the “are you sure” screen still exists. I can’t get rid of “are you sure” unless I pin to a room
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H2 Match between system and real world] (Severity 1) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    Missed initially that clicking tags added them below, was watching the map for something to change and nothing did. Match between system/real world might not be the correct heuristic for this. 
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and Standards] (Severity 2) {Found by 4}
+                  </b>
+                  </br>
+                  <p>
+                    The orange color of the room your pin is on is very similar to the orange of low tag agreement. But I like the consistency between the pin button and the color of the room.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and Standards] (Severity 1) {Found by 3}
+                  </b>
+                  </br>
+                  <p>
+                    Why are the first two buttons blue and the last one orange? It almost seems to imply that the first two buttons are somehow correlated with the “high tag agreement” blue and the last button is associated with the “low tag agreement” orange.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H1 Visibility of System Status] (Severity 1) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    I can put my pin in a location, and then “put it there again”
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H5 Error Prevention] (Severity 2) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    When I select the pin, it prompts me if I am sure, however there are no additional dialogs to come up, my intuition is to press the button again to cancel it. This actually adds me pin instead of cancelling it
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H6 Recognition rather than recall] (Severity 1) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    I believe when I hover over the room, the letter indicates what group the person is in. It would be nice if this could be displayed without hovering over so I can clearly see who I am able to bump off without having to hover over the room. If I am trying to find a room that is already occupied it is very important I know who I can bump off. Maybe just a pattern indicating I can bump or can’t bump.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H5 Error Prevention] (Severity 2) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    This may be a result of the fact that multiple tags on one room is not supported, but it seems weird that for now trying to pin on a room that is already occupied removes my previously pinned room and does not add a new one. 
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H8 Aesthetic and minimalist design] (Severity 2) {Found by 1}
+                  </b>
+                  </br>
+                  <p>
+                    Why there are asterisks near the room numbers
+                  </p>
+                </li>
+
+              </ol>
+
+              <h5>Conclusion and Recommendations</h5>
+              <p>
+                We wanted to bring up some things we were unsure about with your design in case you had not fully considered them. There does not seem to be a way to tell which tags a roommate pair has ranked themselves on.  Have you considered making this more transparent?  What if you want to know how often a hallway plans to throw parties, but they have only ranked themselves on loudness level?  Also with the loudness tag, pairs who want low volume and medium volume are more compatible than those who want medium volume and high volume. Shouldn’t that be reversed? Is there ever a situation where you would be upset with having quieter neighbors?
+              </p>
+              <p>
+                We have a few suggestions that we feel will make your design better. Since it is very easy to place your pin elsewhere, is the prompt asking you if you are sure necessary? Perhaps instead you could add feedback afterwards that clearly confirms that you’ve pinned yourself in a room, to avoid mistaken pinning.  You are also using the same color (white) to indicate neutral agreement and an unoccupied room. This is confusing and changing the agreement scale to be colors that are not used anywhere else would solve that problem.
+              </p>
+
+              <h4>Appendix: Individual Heuristic Evaluations</h4>
+              <h5>Bonnie Ishiguro</h5>
+
+              <ol>
+
+                <li>
+                  <b>
+                    [H1 Visibility of system status] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    It is not initially clear that you can add custom tags, so I recommend indicating that explicitly on the dashboard.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H5 Error prevention] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    If everyone can add tags, how to other people know to rank themselves on new tags?  Also, this system may lead to multiple similar tags that are all trying to answer the same questions.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and standards] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    The word “notifications” does not make me think of direct messages.  I originally assumed notifications would inform you an action, such as another roommate pair placing a pin on your room.  Are these messages only visible to their direct recipients, or is there a group chat of sorts?  Have you planned the flow for sending and receiving messages?  (I realize that it is out of scope to simulate sending and receiving messages in this prototype, which would make the interaction with this section more clear.)
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H2 Match between system and the real world] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    Recommend using meaningful icons instead of words to label the “pin,” “notifications,” and “settings” tabs to more quickly convey their purpose to the user.  Without thinking too hard about the words, I originally thought that “notification settings” was one tab, and I only ended up clicking on “settings” separately by accident.  As stated above, the meaning of “notifications” was not initially clear to me.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H2 Match between system and the real world] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    The icons for “Compare tags” and “Show contact info” on the bottom right of the screen do not communicate their functions to me.  I needed to hover over the buttons to understand what they do.  The “pin” button, however, is clear because I can connect it with the physical pins we use on the foam core boards.  
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H1 Visibility of system status] (Severity 1)
+                  </b>
+                  </br>
+                  <p>
+                    The floorplan image disappears when my browser window is about half size, which may be a little inconvenient for the user, or confusing if he or she does not realize that there is a floorplan available. 
+                  </p>
+                </li>
+
+              </ol>
+
+              <h5>Susie Grimshaw</h5>
+
+              <ol>
+
+                <li>
+                  <b>
+                    [H10 Help and Documentation] (Severity 3)
+                  </b>
+                  </br>
+                  <p>
+                    Overwhelmed initially. There are a lot of things on the screen and I’m not sure what to do first.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H3 User Control and Freedom] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    Can I unpin myself?
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H2 Match between system and real world] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    I was initially confused by the ? button on the bottom right. I realized after reading your documentation more carefully that it’s the compare tags button- I would have expected it to be a “help” button. 
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H1 Visibility of system status] (Severity 1)
+                  </b>
+                  </br>
+                  <p>
+                    If no one is assigned to a room, the “ button doesn’t do anything
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H2 Match between system and real world] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    I also didn’t expect the “ button to be contact info.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H9 Help users recognize, diagnose, and recover from errors] (Severity 3)
+                  </b>
+                  </br>
+                  <p>
+                    Can I remove tags from my list? 
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H6 Recognition rather than recall] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    Where do the notifications come from? Can I send one?
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H2 Match between system and real world] (Severity 4)
+                  </b>
+                  </br>
+                  <p>
+                    “Search for tags” maybe isn’t the right text for where I can also add tags
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H3 User control and Freedom] (Severity 0)
+                  </b>
+                  </br>
+                  <p>
+                    Room says “EH” before I select one
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H8 Aesthetic and minimalist design] (Severity 1)
+                  </b>
+                  </br>
+                  <p>
+                    Why are partying and movies defaults?
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and Standards] (Severity 1)
+                  </b>
+                  </br>
+                  <p>
+                    I definitely thought in my head that orange was good and blue was bad. Like I saw the color key and everything but I still thought the opposite. But that might just be me. 
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and Standards] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    Buttons on the bottom right look kind of like buttons, but I would expect some hover behavior to increase discoverability. 
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H7 Flexibility and efficiency of use] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    Clicking pin and then a different room- the “are you sure” screen still exists. I can’t get rid of “are you sure” unless I pin to a room
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H2 Match between system and real world] (Severity 1)
+                  </b>
+                  </br>
+                  <p>
+                    Missed initially that clicking tags added them below, was watching the map for something to change and nothing did. Match between system/real world might not be the correct heuristic for this. 
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and Standards] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    The orange color of the room your pin is on is very similar to the orange of low tag agreement. But I like the consistency between the pin button and the color of the room.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and Standards] (Severity 1)
+                  </b>
+                  </br>
+                  <p>
+                    Why are the first two buttons blue and the last one orange? It almost seems to imply that the first two buttons are somehow correlated with the “high tag agreement” blue and the last button is associated with the “low tag agreement” orange.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H1 Visibility of System Status] (Severity 1)
+                  </b>
+                  </br>
+                  <p>
+                    I can put my pin in a location, and then “put it there again”
+                  </p>
+                </li>
+
+              </ol>
+
+              <h5>Chris Wallace</h5>
+
+              <ol>
+
+                <li>
+                  <b>
+                    [H5 Error Prevention] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    When I select the pin, it prompts me if I am sure, however there are no additional dialogs to come up, my intuition is to press the button again to cancel it. This actually adds me pin instead of cancelling it
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H6 Recognition rather than recall] (Severity 1)
+                  </b>
+                  </br>
+                  <p>
+                    I believe when I hover over the room, the letter indicates what group the person is in. It would be nice if this could be displayed without hovering over so I can clearly see who I am able to bump off without having to hover over the room. If I am trying to find a room that is already occupied it is very important I know who I can bump off. Maybe just a pattern indicating I can bump or can’t bump.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H8 Aesthetic and minimalist design] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    I do not understand what the apostrophe button means
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H8 Aesthetic and minimalist design] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    Why there are asterisks near the room numbers
+                  </p>
+                </li>
+
+              </ol>
+
+              <h5>Marena Richardson</h5>
+
+              <ol>
+
+                <li>
+                  <b>
+                    [H8 Aesthetic and minimalist design] (Severity 1) 
+                  </b>
+                  </br>
+                  <p>
+                    The buttons and fonts on the login / sign up screen clash with the rest of the website’s flat and sans serif design. Additionally, some of the text underneath the pin, notifications, settings is Times New Roman. This choice is fine if intentional, but it looks haphazard.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H1 Visibility of system status] (Severity 3)
+                  </b>
+                  </br>
+                  <p>
+                    It is initially unclear to me whether the tags on the left represent my own ratings or just what I am using to compare to other’s ratings. How do I rate myself on these scales so that others can see how I compare to them? Can my scales be visually separated from the scales that I can mess with to see how different tag ratings correspond to others’ rooms?
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H5 Error Prevention] (Severity 3)
+                  </b>
+                  </br>
+                  <p>
+                    If I type into the search tags field, it adds a new tag. This was not the default behavior I expected. You should create an explicit way to add tags. Also once a new tag is added, how do other rooms rate themselves on that axis?
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and standards] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    Empty rooms and rooms with middle tag agreement should not be the same color. You should choose a new color for middle tag agreement.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H3 User control and freedom] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    There is no way to abandon the are you sure mode for pinning a room.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H3 User control and freedom] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    There is no way to remove a tag from my left panel once I have added it. I would add an x next to each of them.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and standards] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    My pinned room is yellow, which too closely resembles rooms with poor agreement in orange. You should make my pinned room a more unique color.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H5 Error Prevention] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    This may be a result of the fact that multiple tags on one room is not supported, but it seems weird that for now trying to pin on a room that is already occupied removes my previously pinned room and does not add a new one.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H4 Consistency and standards] (Severity 3)
+                  </b>
+                  </br>
+                  <p>
+                    The buttons bottom right do not make sense color wise or icon wise with the exception of the pin icon, which only makes sense icon wise. You should consider grayscaling these to remove confusion with the high and low tag agreement colors. In addition, because the default mode after pinning is to show contact info, the quote button gives me the impression of hiding contact info.
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H2 Match between system and the real world] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    Most people’s exposure to direct messages falls under the category of inbox or messages, thanks to email and Facebook, notifications seems like an odd term for this category. I would have expected notifications to be things like, so and so added a tag, would you like to rank yourself on it?
+                  </p>
+                </li>
+
+                <li>
+                  <b>
+                    [H1 Visibility of system status] (Severity 2)
+                  </b>
+                  </br>
+                  <p>
+                    How do I send a direct message?
+                  </p>
+                </li>
+
+              </ol>
+
+            </div><!-- END CELL -->
+          </section>
+        </div><!-- END HEURISTIC EVALUATION -->
+
         <div class="mdl-layout__tab-panel" id="prototype">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell mdl-cell--12-col">
@@ -775,6 +1507,14 @@
             </div>
           </section>
         </div> <!-- END PROTOTYPE -->
+
+        <div class="mdl-layout__tab-panel" id="designrefinement">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Design Refinement</h4>
+            </div>
+          </section>
+        </div><!-- END DESIGN REFINEMENT -->
 
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
