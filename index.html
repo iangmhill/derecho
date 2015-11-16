@@ -36,7 +36,7 @@
           <h3>Derecho: Improving Room Draw</h3>
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h5>A Human Factors Interface Design project by Sophia Seitz, Tenzin Choetso, Ian Hill, John Greene</h5>
+          <h5>A Human Factors Interface Design project by Sophia Seitz, Tenzin Choetso, Ian Hill, Austin Greene</h5>
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
@@ -46,6 +46,7 @@
           <a href="#needs" class="mdl-layout__tab">Needs Analysis</a>
           <a href="#designdev" class="mdl-layout__tab">Design Development</a>
           <a href="#prototype" class="mdl-layout__tab">Prototype</a>
+          <a href="#wireframes" class="mdl-layout__tab">Wireframes</a>
           <a href="#heuristic" class="mdl-layout__tab">Heuristic Evaluation</a>
           <a href="#designrefinement" class="mdl-layout__tab">Design Refinement</a>
           <a href="#effort" class="mdl-layout__tab">Effort Chart</a>
@@ -751,6 +752,214 @@
             
           </section>
         </div><!-- END DESIGN DEVELOPMENT -->
+        <div class="mdl-layout__tab-panel" id="wireframes">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Wire Frames/Site Map</h4>
+
+              <h5> Sitemap </h5>
+                <p>
+                  Pictured below is the sitemap of our prototype. 
+                </p>
+
+                <a href="images/wireframes/sitemap.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/sitemap.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      The sitemap of our prototype. 
+                    </div>
+                  </div>
+                </a>
+
+                <p>
+                  In this sitemap, we aim to show all of the paths a user can take. There are two main paths -- exploring the dorms and indicating one's own culture preferences, which will each be described in further detail. The following documation will walk through each interaction a user can have with our prototype, starting with the login screen. 
+                </p>
+
+                <a href="images/wireframes/login.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/login.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      The log in "page" for our prototype. 
+                    </div>
+                  </div>
+                </a>
+
+                <p>
+                  <b><u>Login Page:</u></b> When users first open our webapp, they will come to a login screen. On this screen, they will see a message that tells them to log in with their Olin network credentials, for example sseitz and sophiaspassword. After inputting this information and pressing the login button, users will be taken to the landing screen. 
+                </p>
+
+                <a href="images/wireframes/blank_eh1.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/blank_eh1.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      The landing page for a new user. For a return user that had placed a pin, the landing page would be the floor that their pin is on.  
+                    </div>
+                  </div>
+                </a>
+
+                <p>
+                  <b><u>Landing Screen:</u></b> The landing screen is a view that contains a map of one floor of a dorm. The floor that is displayed is chosen with the following logic: if a user has placed a pin in a room, that floor of the dorm is displayed. Otherwise, if the user is a rising senior or junior, then the first floor of East Hall is displayed. Otherwise, if the user is a rising sophomore, the first floor of West Hall is displayed. Additionally, there is a banner on the top of the screen that allows users to switch between floors and dorms or logout of the webapp. When a user clicks on one of the floors, the map will transition to that floor, and this particular floor will be highlighted on the banner. At the start, whichever floor the user is on will be highlighted. 
+                </p>
+
+                <p>
+                  Along with them map of one floor of a dorm, there is also a “card” that displays user culture information, settings, and notifications. The tab currently selected is the user culture information tab. This tab contains the users and roommates name, currently selected room, and tags that they have interacted with. If users have not interacted with any tags, then the tags section will be blank, and they will only be able to see a search bar that has the words “search or add tag”. If they have interacted with tags, then this search bar will appear as well as the tags that they have ranked. In this case, the tags will be arranged from “need” to “can’t stand”, and a user will scroll the card. 
+                </p>
+
+                <p> 
+                  From this view, the user has a few possible actions, they can search or add tags, explore the dorms, view notifications, or view/change settings.
+                </p>
+
+                <a href="images/wireframes/tag_search.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/tag_search.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      This is what the tag searching interface will look like.  
+                    </div>
+                  </div>
+                </a>
+                
+
+                <p>
+                  <b><u>Add/Search Tags:</u></b> Here, a user can search for tags. A user can search for a tag in the search box. If they find the tag, they can click the “+” button next to the tag to add it to their list of tags that they’ve ranked. If there are no tags that match the user’s description, they have the option of adding a tag that others can interact with. 
+                </p>
+
+                <p>
+                  When a user clicks on the search box, before they type anything, the search box will suggest that tags that that a user has not interacted with. These will be the five most popular tags that a user has not interacted with. 
+                </p>
+
+                <p>
+                  Once a user selects a tag, it will appear at the top of their tags list until they rank it. Users can rank tags by dragging the indicator from need to have to need to avoid. This interaction is shown below. 
+                </p>
+
+                <a href="images/wireframes/set_preferences.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/set_preferences.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      A user setting their preference for a given tag.  
+                    </div>
+                  </div>
+                </a>
+
+                <p> 
+                  A user can also adjust their ranking on other that they have already ranked. Any time a user changes their ranking on an existing tag or ranks a new tag, the heat map will update to reflect the current net agreement/disagreement score.
+                </p>
+
+                <p>
+                  <b><u>Settings:</u></b> From the landing page, a user can also change their settings. To do this a user can click on the settings tab on the card beside the map of the dorms. From this tab, users can choose which events they would like to get email notifications for (for example, when someone else has placed their pin in a room that is currently selected by the current user or when there is a new member in the user’s hallway). In this page, a user can also input the methods by which they would prefer to be contacted, like slac, email, text for example, and rank their prefered methods of communications.
+                </p>
+
+                <a href="images/wireframes/settings.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/settings.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      The settings tab.  
+                    </div>
+                  </div>
+                </a>
+
+                 <p>
+                  <b><u>Notifications:</u></b> A user can also click on the notifications tab at the top of the card to view their current notifications. This screen will look something like the facebook notification dropdown, and will just take up room in the card. 
+                </p>
+
+                <a href="images/wireframes/notifications.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/notifications.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      The notifications tab.  
+                    </div>
+                  </div>
+                </a>
+
+                <p>
+                  <b><u>Switching Floors:</u></b> Users can browse through different dorm floors using the menu bar at the top of the screen. Clicking on a particular floor on the bar will display the map of that floor and the floor name will be bolded.  
+                </p>
+
+                <a href="images/wireframes/explore_floors.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/explore_floors.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      Users can also explore different floors of a particular dorm.  
+                    </div>
+                  </div>
+                </a>
+
+                <p>
+                  <b><u>Hover:</u></b> When a user hovers over a room where a pin has been placed, a small pop-up appears telling the user who placed their pin in that room. 
+                </p>
+
+                <a href="images/wireframes/hover.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/hover.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      The hover "pop up".
+                    </div>
+                  </div>
+                </a>
+
+                <p>
+                  <b><u>Click:</u></b> After hovering over a room, a user can click to select the room to view more information. 
+                </p>
+
+                <a href="images/wireframes/inspect.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/inspect.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      Inspecting a room.
+                    </div>
+                  </div>
+                </a>
+
+
+                <p>
+                  <b><u>Compare:</u></b> The comparison tool is designed for comparing culture against individual rooms. When a user clicks on a room, there is a button in the lower left hand corner which allows users to compare the user’s tag preferences to those of another room or suite. To show this, colored indicators are overlaid on the tag sliders to represent the preference of the room or suite being inspected. 
+                </p>
+
+                <a href="images/wireframes/compare.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/compare.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      Comparing two users' tags.
+                    </div>
+                  </div>
+                </a>
+
+                <p>
+                  <b><u>Selecting Room:</u></b> When a user clicks on a room, there is a button in the lower right hand corner which allows users to select that room. By doing so, the user’s name will appear along with the students who have also selected that room. Those students will receive a notification that someone else is also interested in that room.  
+                </p>
+
+                <a href="images/wireframes/confirm_pin_placement.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/confirm_pin_placement.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      After clicking once on the place pin button, the user gets a confirmation.
+                    </div>
+                  </div>
+                </a>
+
+                <a href="images/wireframes/pin_placed.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/pin_placed.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      A user has placed their pin.
+                    </div>
+                  </div>
+                </a>
+
+                <p>
+                  <b><u>Contact Information:</u></b> When a user clicks on a room, there is a “conversation button” which allows the user to connect to the students who have place their pins on that room. If the preferred method of connecting to them has not been indicated in the settings, the user will be directed to email them to their olin email accounts.
+                </p>
+
+                <a href="images/wireframes/start_conversation.jpg">
+                  <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                    <img src="images/wireframes/start_conversation.jpg" style="width: 100%"/>
+                    <div class="mdl-card__supporting-text">
+                      Finding other people's contact information.
+                    </div>
+                  </div>
+              </a> 
+            </div>
+          </section>
+        </div> <!-- END PROTOTYPE -->
 
         <div class="mdl-layout__tab-panel" id="heuristic">
           <section class="section--center mdl-grid mdl-grid--no-spacing">
