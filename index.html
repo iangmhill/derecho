@@ -1722,66 +1722,66 @@
             <div class="mdl-cell mdl-cell--12-col">
               <h4>Design Refinement</h4>
               <h5>What is your design? How does it work?</h5>
-              <b>Login Page:</b>
-              <img src="designrefinement/login.png" width="400px"/>
+              <p><b>Login Page:</b></p>
+              <img src="images/designrefinement/login.png" width="400px"/>
               <div class="mdl-card__supporting-text">The login page for our prototype</div>
               <p>When users first open our webapp, they will encounter a login screen. On this page, they can create a username and password for themselves and then log in to our app. For example, a user could use the combination sseitz and sophiaspassword. After inputting this information and pressing the login button, users will be taken to the landing screen.</p>
               <b>Landing Screen:</b>
               <p>The landing screen is a view that contains a map of one floor of a dorm. The floor that is displayed is chosen with the following logic: if a user has placed a pin in a room, that floor of the dorm is displayed. If the user is a rising senior or junior, then the first floor of East Hall is displayed. Otherwise, if the user is a rising sophomore, the first floor of West Hall is displayed. Additionally, there is a banner on the top of the screen that allows users to switch between floors and dorms or logout of the webapp. When a user clicks on one of the floors, the map will transition to that floor, and this particular floor will be highlighted on the banner. At the start, whichever floor the user is on will be highlighted.</p>
-              <img src="designrefinement/landingscreen.png" width="400px"/>
+              <img src="images/designrefinement/landingscreen.png" width="400px"/>
               <div class="mdl-card__supporting-text">The landing screen of our webapp. Note that in this particular landing screen the user has already ranked some tags. This would not be the case for a new user who is logging on for the first time. Additionally, if a user logs on for the first time, rooms would appear blank.</div>
               <p>Along with the map of one floor of a dorm, there is also a “card” that displays user culture information, settings, and notifications. The tab currently selected is the user culture information tab. This tab contains the users and roommates name, currently selected room, and tags that they have interacted with. If users have not interacted with any tags, then the tags section will be blank, and they will only be able to see a search bar that has the words “search or add tag”. If they have interacted with tags, then this search bar will appear as well as the tags that they have ranked. In this case, the tags will be arranged from “need” to “can’t stand”, and a user will scroll the card.</p>
               <p>From this view, the user has a few possible actions, they can search or add tags, explore the dorms, view notifications, or view/change settings.</p>
               <b>Add/Search Tags</b>
               <p>Here, a user can search for a tag in the search box. If they find the tag, they can click on the tag to add it to their list of tags that they’ve ranked. If there are no tags that match the user’s description, they have the option of adding that tag to the master list of tags users can interact with.</p>
-              designrefinement/tagsearcht.png
+              <img src="images/designrefinement/tagsearcht.png" width="400px"/>
               <div class="mdl-card__supporting-text">A user searching for tags.</div>
               <p>When a user clicks on the search box, before they type anything, the search box will suggest that tags that that a user has not interacted with. These will be the five most popular tags that a user has not interacted with. This is shown below:</p>
-              <img src="designrefinement/tagsearch.png" width="400px"/>
+              <img src="images/designrefinement/tagsearch.png" width="400px"/>
               <div class="mdl-card__supporting-text">Displaying the five most popular tags.</div>
               <p>Once a user selects a tag, it should appear at the top of their tags list until they rank it. Currently, however, in our prototype, newly added tags appear at the bottom of the tags list. Users can rank tags by dragging the indicator from need to have to need to avoid.</p>
-              <img src="designrefinement/addedtag.png" width=400px"/>
+              <img src="images/designrefinement/addedtag.png" width="400px"/>
               <div class="mdl-card__supporting-text">Now, a user has added a tag.</div>
               <p>Any time a user changes their ranking on an existing tag or ranks a new tag, the heat map will update to reflect the current net agreement/disagreement score for each visible room.</p>
               <b>Settings</b>
               <p>A user can also click on the settings tab on the card beside the map of the dorms. From this tab, users can choose which events they would like to get email notifications for (for example, when someone else has placed their pin in a room that is currently selected by the current user or when there is a new member in the user’s hallway). In this page, a user can also input the methods by which they would prefer to be contacted, like slac, email, text for example, and rank their prefered methods of communications. This is currently unimplemented, but below is a picture of wireframes depicting what we plan to have in the settings tab:</p>
-              <img src="designrefinement/settings.png" width="400px"/>
+              <img src="images/designrefinement/settings.jpg" width="400px"/>
               <div class="mdl-card__supporting-text">The wireframe of the settings tab. We are planning to implement this in our prototype.</div>
               <b>Notifications</b>
               <p>A user can also click on the notifications tab at the top of the card to view their current notifications. This screen will look something like the facebook notification dropdown, and will just take up room in the card.</p>
-              <img src="designrefinement/notifications.png" width="400px"/>
+              <img src="images/designrefinement/notifications.png" width="400px"/>
               <div class="mdl-card__supporting-text">The wireframe of the notifications tab. Our current notifications tab in our prototype does not reflect this wireframe and we are planning on updating it.</div>
               <b>Switching Floors</b>
               <p>Users can browse through different dorm floors using the menu bar at the top of the screen. Clicking on a particular floor on the bar will display the map of that floor and the floor name will be bolded.</p>
-              <img src="designrefinement/differentfloor.png"/>
+              <img src="images/designrefinement/differentfloor.png" width="400px"/>
               <div class="mdl-card__supporting-text">Users can navigate to different floors. Note that in our prototype, many people live on all the floors. This would clearly not be true of the final product.</div>
               <b>Hover</b>
               <p>When a user hovers over a room where a pin has been placed, a small pop-up appears telling the user who placed their pin in that room as well as their group number in the room draw.</p>
-              <img src="designrefinement/hover.png" width="400px"/>
+              <img src="images/designrefinement/hover.png" width="400px"/>
               <div class="mdl-card__supporting-text">The hover “popup”</div>
               <b>Compare</b>
               <p>The comparison tool is designed for comparing culture against individual rooms. When a user clicks on a room, there is a button in the lower left hand corner of the preview card which allows users to compare the user’s tag preferences to those of another room or suite. To show this, colored indicators are overlaid on the tag sliders to represent the preference of the room or suite being inspected. This is currently not functional in our prototype, but we will implement this in the near future.</p>
-              <img src="designrefinement/compare.jpg" width"400px"/>
+              <img src="images/designrefinement/compare.jpg" width="400px"/>
               <div class="mdl-card__supporting-text">Users will also be able to compare their tag ratings with other uses to get a more in-depth view of how they compare with others.</div>
               <b>Selecting room</b>
               <p>When a user clicks on a room, there is a button in the lower right hand corner which allows users to select that room. To ensure that users do not accidently select a room, users have to select the symbol again. After doing so, the user’s name will appear along with the students who have also selected that room. Those students will receive a notification that someone else is also interested in that room.</p>
-              <img src="designrefinement/inspect.png" width="400px"/>
+              <img src="images/designrefinement/inspect.png" width="400px"/>
               <div class="mdl-card__supporting-text">The card that appears when users click on a room to get more information</div>
               <b>Contact Information</b>
               <p>When a user clicks on a room, there is a “conversation button” which allows the user to connect to the students who have place their pins on that room. If the preferred method of connecting to them has not been indicated in the settings, the user will be directed to email them to their olin email accounts. We have chosen to not to reinvent the wheel as it comes to communication by building an in-app communication tool; Olin has so many ways of communication, and adding another method would likely not be utilized. This, however, is an area that we are presently not sure about, and are investigating other options for in-app communication.</p>
-              <img src="designrefinement/contactinfo.png" width="400px"/>
+              <img src="images/designrefinement/contactinfo.png" width="400px"/>
               <div class="mdl-card__supporting-text">Displaying users’ contact information.</div>
               <b>What changed?</b>
               <p>Our current prototype has largely stayed true to our paper version, except in three respects. The first being our mechanism for finding, and creating tags. In our paper prototype all tags are displayed and you scroll down the sidebar to find the appropriate tags. To add a tag there was a small section at the bottom of the list that allowed users to input a tag name and add it to their list. This system seemed rather unwieldy, requiring a lot of scrolling and increasing the activation energy for adding new tags. We redesigned this, in the new system we have a search bar at the top of the tags list. This search bar allows users to always easily find a tag using a fuzzy search algorithm, and if their tag isn’t currently in the system it prompts them to add it. This dramatically decreases the time to find a tag, and to add a tag all while decreasing the number of duplicate tags. The second major change was to add a visual marker to each room for the number of pins currently placed in it. This makes taken rooms even more visually distinct and demonstrates conflicts. Lastly, We also changed the way in which users create accounts. In the paper prototypes we had users use their OlinApp credentials to login, in the current prototype we use a local strategy OAuth. This was mostly for ease of prototyping, and may change back.</p>
               <b>What (if any) key insights did you gain during this phase?</b>
               <p>Our biggest insight this phase was how important the use of color is in design, and how difficult it is to find a good color scheme. We had always assumed that it would be relatively easy to find a color scheme that worked for us. Afterall, color, and the use of color, is not something we typically notice when we see a beautifully designed website. This was very much not the case for us, as color has been a large point of contention during this phase. It has been especially difficult to figure out an intuitive coloring scheme for the rooms in the dorm, where we need one color scale to represent low to high tag agreement, a color for the user’s pin, and a color for rooms that are not occupied, and all of these colors should be distinguishable and instantly understandable, even by people who are color blind. This made choosing a color scheme very difficult, and neither we nor our evaluators are entirely pleased with our current solution.</p>
               <p>Another insight that we had this phase is that icons are difficult to do well. While icons often look nicer than just having buttons with text that describe the function of the button, it is difficult to create an image that describes the function of the button as well as text would. Many of the icons that we understand the function of intuitively are only that way because we have been using those icons for so long that the meaning has become ingrained. For example, the functions of our compare tags and contact information buttons were confusing to our heuristic evaluators.</p>
-              <img src="designrefinement/buttons.png" width="400px"/>
+              <img src="images/designrefinement/buttons.png" width="400px"/>
               <div class="mdl-card__supporting-text">A screenshot of the contact information (right) and compare tags button (left) that caused confusion.</div>
               <p>Although these buttons do have mouseover text, their function is not immediately clear, and we plan to investigate changing the icon for both of these buttons so that their function is more immediately clear.</p>
               <b>What questions do you have now about your project?</b>
               <p>There was a general confusion about what colors to use for our tool and what they should represent. We are still exploring what color combination to use to show that a room has a high agreement or low agreement. A screenshot of our current color scheme can be seen below:</p>
-              <img src="designrefinement/color.png" width="400px"/>
+              <img src="images/designrefinement/color.png" width="400px"/>
               <div class="mdl-card__supporting-text">A screenshot of our current map color scheme. Much can be improved.</div>
               <p>We used yellow or “gold” to show that a room has been selected. We felt this is a color that could be immediately noticed since it is considerably lighter than blue and orange that we have used for our  high and low agreement respectively. However, yellow and orange looking similar could make users think that the users are in low agreement with themselves when they have chosen a room. We are also debating how to indicate empty rooms. They are currently not colored, since no one has added tags for those rooms yet. We had considered using grey to indicate empty rooms but we felt that it may also make the user think that those rooms are interactable.</p>
               <p>We have, as a team, also struggled as to what role our app will play in generating conversations around the room draw process. Just by existing and exposing a new dimension of room draw, people will have more to talk about and be more likely to communicate with each other. But, is this this enough? Whether or not to add an in app communication tool has been a point of contention on the team. Between email, slack, trello, messenger, groupme, texting, hangouts, and calling, Oliners already have a ridiculous number of vectors for communication. It is already a struggle trying to keep on top of all of these, we worry that we will just be adding more headache. Is there a way to encourage people to have genuine and productive conversations around their rooming intentions without forcing students to take more advil? This question clearly needs more exploration by the team.</p>
