@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="stylesheet" href="css/material.min.css">
+    <link rel="stylesheet" href="css/material.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
@@ -49,6 +49,7 @@
           <a href="#wireframes" class="mdl-layout__tab">Wireframes</a>
           <a href="#heuristic" class="mdl-layout__tab">Heuristic Evaluation</a>
           <a href="#designrefinement" class="mdl-layout__tab">Design Refinement</a>
+          <a href="#finalrefinement" class="mdl-layout__tab">Final Refinement</a>
           <a href="#effort" class="mdl-layout__tab">Effort Chart</a>
         </div>
       </header>
@@ -1789,6 +1790,377 @@
             </div>
           </section>
         </div><!-- END DESIGN REFINEMENT -->
+
+        <div class="mdl-layout__tab-panel" id="finalrefinement">
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h4>Final Refinement</h4>
+              <h5>Defining the Problem and User Space</h5>
+              <p>
+                What does it mean for something to be “Olin-esque?” If one were to ask Oliners, one would hear many different answers to this question. Some students will quote the Honor Code while others cite their experiences in class, but consistently, the Olin community values cooperation, communication, and respect for others.
+              </p>
+              <p>
+                Every year, our current process for assigning students to dorm rooms invites students to abandon one or more of these values. We call this process Room Draw. In such a close knit community, students care deeply about who they will be rooming with and near. Students look forward to planning suites and hallways with their friends around a certain culture or theme, and they get emotionally attached to plans and potential futures. This high stress situation makes communicating intentions absolutely critical.
+              <p>
+              </p>
+                Our project aims to encourage collaboration by informing early communication in the room draw process. Through more informed communication, students can better understand each other’s intentions and resolve potential conflicts in a respectful and thoughtful way.
+              <p>
+              </p>
+                In our initial investigations of the room draw process, we identified three different stages in the room draw process:  people deciding who they want to room with within a suite or double, people deciding who they are living with, and finally the stage where everything becomes official, and student life is in charge of placing remaining stragglers. A diagram of these stages can be seen below:
+              </p>
+              <img src="images/finalrefinement/three_phases.jpg" width="400px"/>
+              <p>
+                Of these three stages, we focused on the second stage -- where students decide where they are living. In this stage, students generally know who their room/suitemates are, but have not finalized a dorm, hallway, or room. In this stage, it is important to have lower-latency, open, and informed communication. Additionally, it is important to have conversations about culture during this time. With our tool, we wanted to address the need for good communication, focusing specifically on providing low-latency information about who is living where and enabling informed conversations about culture. 
+              </p>
+              <p>
+                Because Olin’s room draw process is so unique and our student body so small, we designed this product exclusively for Olin students who participate in the room draw process. With the goal of understanding how the room draw process could be improved, we conducted conversations with the student body.  In our conversations around the room draw process, we have found that there are four distinct personas, or personalities that are present during the room draw process.
+              </p>
+              <h6>Hallway Organizer (Ruth)</h6>
+              <p>
+                These students are in charge of a group of either suites or doubles. They take on responsibility for organizing and placing groups of students.
+              </p>
+              <p>
+                During the room draw process, the responsibility to create the perfect hallway culture weighs heavily on hallway organizers. Sometimes an entire hallway relies on their logistical talents. They not only have to keep tabs on what other hallway organizers are doing, but also other independent Oliners who might have a higher rank than any member of the group they are organizing. An organizers entire plan can be derailed with one unanticipated pin placement.
+              </p>
+              <p>
+                For example, Ruth is a rising senior. Last year, she and a group of her friends were organizing a group of doubles that wanted to live in an East or West hallway across from a suite in East Hall. She was not the one organizing this group, though. The night before double lock in, someone dropped a pin in the middle of their hallway, and the hallway organizer did not notice in time. This cascaded, and unfortunately, Ruth’s hallway was not able to regroup in time, and wound up living all across East Hall. 
+              </p>
+              <p>
+                This year, Ruth is taking matters into her own hands, and is planning on organizing a party hallway. She knows which suites want to live in this hallway, but is very concerned with finding a double that will be enthusiastic about participating in the hallway culture. 
+              </p>
+              <h6>Hallway Member (Shep)</h6>
+              <p>
+                These are students that are a part of a larger hallway organization -- a group of friends all planning on living together. These students usually live where their hallway organizer tells them to. 
+              </p>
+              <p>
+                During the room draw process, hallway members are relatively relaxed -- they know that they’ll be living in a hallway with their friends, with the culture that they want. Although they do care about living with their friends, they also know that someone else is responsible for organizing the group. 
+              </p>
+              <p>
+                Shep, an example of a hallway member, is a rising Junior. He plans on living in a double in an East or West hallway of East Hall. Since he isn’t the one in charge of organizing the group, he does not really care what happens -- he just wants to live with his friends. He’s happy to leave the organization to someone else. As a result, Shep does care where he lives, but would not really be engaged with the room draw process because he has someone else who engages on his behalf. The only time Shep might become engaged is if/when his hallway group falls apart and he has to find a place to live without his group. 
+              </p>
+              <h6>Indifferent Roommates (Dylan)</h6>
+              <p>
+                These people are not engaged in the room draw process at all. They do not care who they are living with and where they are living. They are not a part of a group that wants to live together. 
+              </p>
+              <p>
+                During the room draw process, indifferent roommates go with the flow. They may never lock in a roommate or go through the normal room draw process. As long as they wind up with a room before the semester starts, they are not concerned.
+              </p>
+              <p>
+                For example, Dylan is not at all engaged with the room draw process. His motto is something like “I don’t care -- I just need a room and I’ll be happy”. He’s not likely to engage in the process at all, and will likely just take an empty room somewhere in the dorms. 
+              </p>
+              <h6>Passionate Independent (Nancy)</h6>
+              <p>
+                These students do care very much about where they are living or the culture of their hallway, but are not a part of a group.
+              </p>
+              <p>
+                These students may have been kicked out of a hallway group or suite due to size constraints or care strongly about some outside factor. This factors include, but aren’t limited to, proximity to first years, sound, alcohol culture, natural lighting, proximity to friends, distance from enemies, ceiling height, and floor level.
+              </p>
+              <p>
+                An example of a passionate independent is Nancy. She is a rising sophomore who has never participated in room draw. This year she happens to be living in a hallway far away from all of her friends. Although she had no say in this, she wants to make sure that next year is different. Although she has not committed to living with a group of people, she would like to live in a hallway with at least some of her friends. 
+              </p>
+              <h5>Product Requirements</h5>
+              <p>
+                As a result of our conversations with users and the development of our personas, we discovered the following requirements:
+              </p>
+              <h6>Expressing Intent</h6>
+              <p>
+                Rising sophomores, juniors and seniors should be able to use the tool to indicate where they would like to room and gauge other students’ preferences for doubles or suites in East Hall or West Hall. 
+              </p>
+              <h6>Cultural Expression</h6>
+              <p>
+                We found that hallway culture is one of the most important parameters people use to select where they are living. Our more engaged personas are all highly concerned about their hallway culture. As a result, our solution should allow people to view and submit preferences in hallway culture. Indicating hallway culture will allow users to view and communicate their lifestyle.
+              </p>
+              <h6>Better Communication</h6>
+              <p>
+                We want to enable an open conversation about hallway culture. While in a group, conversations about hallway culture might happen offline and might be decided by the time room draw officially happens, Nancy and other passionate independents living together might not have as clear and cohesive an idea of the hallway culture that they want. We also need to enable and store these conversations in a centralized place, so that prospective members of a hallway can engage in chats to gauge if a particular hallway is for them. 
+              </p>
+              <h6>Product Robustness</h6>
+              <p>
+                Users must be free to choose whether to engage in any portion of the room draw tool. We cannot alienate Dylan and the disengaged room draw participants or other people who do not feel comfortable stating information. That said, it is important that the entire room draw planning tool is not disrupted by a few users choosing to not engage with every feature of the tool.
+              </p>
+              <h5>Design Directions</h5>
+              <p>
+                From these prototype requirements and our understanding of the needs of our users, we identified the following design directions:
+              </p>
+              <h6>Providing information about the big picture of who is living where</h6>
+              <p>
+                The first direction we identified focuses on giving people as much information about who is living where as possible. One possible design interaction can be seen below.
+              </p>
+              <img src="images/finalrefinement/BigPicture.jpg" width="400px"/>
+              <p>
+                In this design direction, we aimed to capture the idea that being able to visualize room draw on the dorm-level as opposed to a floor or hallway level would provide added value. Here, we wanted users to be able to not only be able to see how multiple floors are shaping up, but also be able to see easily who is living above or below them. Afterall, loud upstairs neighbors might be more annoying than loud neighbors across the hall. One possible interface we briefly investigated for this design direction is the “bubble map” visualization. 
+              </p>
+              <img src="images/finalrefinement/Bubbles.jpg" width="400px"/>
+              <p>
+                Although this is not a complete map of a dorm, this interface would allow a user interested in living in the West hallway on the 2nd floor to easily see who is planning on living in their chosen hallway, as well as the other hallways on their floor and the hallways above or below their second hallway. 
+              </p>
+              <p>
+                We did not move further than initial sketches of possible interfaces with this design direction because although presenting information in a different way is an intriguing idea, there is little added value. In the current room draw process, people can access this information already. We are just reshuffling the information that already exists to display it in a different way. Although a tool that makes seeing the big picture of who is living where might be useful for someone like Ruth the Hallway Organizer (see personas from last phase) Nancy the Passionate Independent might not like this tool as much. Although she likes the idea of being able to see who is around her, she also cares a lot about the culture of the hallway she lives in, and this tool puts culture in the back seat in preference of visualizing data. Additionally, big picture information is not useful to people like Shep or Dylan who are not very engaged in this part of the room draw process, and the additional time spent navigating through the big picture information to select a room would frustrate them. 
+              </p>
+              <h6>Facilitating communication about who wants to live where</h6>
+              <p>
+                Another of our design directions is facilitating communication around who wants to live where. A tool in this design direction would focus on making it easy to have conversations between people interested in living in/on the same floor, hallway, or room. Since our goal was to improve communication around the room draw process, this is perhaps the most obvious design direction, and the process for this particular direction is relatively simple. 
+              </p>
+              <img src="images/finalrefinement/Communication.jpg" width="400px"/>
+              <p>
+                As can be seen in the brief process diagram above, the process in a case centered around communication might involve navigating through a map of the different floors of a particular dorm, selecting a room that the user is interested in living in. If others are also interested in living in the same room, then users engage in a conversation about who gets the room, which will eventually end with one person getting the room and others having to find new rooms. Once a person has selected a room, they would be automatically added to public chats with all the current members of the hallway that other prospective members of the hallway could see. One possible implementation of this can be seen below:
+              </p>
+              <img src="images/finalrefinement/MessageMap.jpg" width="400px"/>
+              <p>
+                We did not choose to pursue this design direction because we felt that it was too straightforward. There was an easily implementable solution, but we felt that this direction was not particularly innovative -- this would have been simply a digital representation of the current pin board process Olin has. For the purposes of this class, we felt that we could learn much more pursing our third design direction. Additionally, a system built around communication does not work for people like our Shep and Dylan personas who are not interested in communicating at all. This type of design would be frustrating for people trying to communicate with the Sheps and Dylans of room draw, and doesn’t necessarily add any value for a Nancy or Ruth who is trying to determine if she or someone else will be a good cultural fit or see how other hallway groups are behaving.
+              </p>
+              <h6>Making sure people are aware of the culture of their living area</h6>
+              <p>
+                Our third design direction, and the one we chose to pursue, is  focused on surfacing cultural information. In this design direction we are trying to add value by making information about culture that is not easily accessible in the current room draw process easily available to users. As a result, we felt that in choosing this design direction there was the most potential for adding value to the room draw experience. Unlike the two previous design directions that benefitted users mostly by using an online tool to lower latency, this direction actually allows us to add value to the room draw experience, giving people more information than they had before, not just presenting the information in a different format.
+              </p>
+              <h5>Surfacing Hallway Culture</h5>
+              <p>
+                To surface information about culture, we considered a few different methods. One of these included a culture-based survey at the beginning of our app. Although this would have allowed users to input their cultural information, this would have created a high barrier to entry, forcing users to finish inputting all of their culture preferences before they were able to benefit from having added that information. This directly violated one of our requirements for our tool: that is it was possible to not interact with the tool.
+              </p>
+              <p>
+                As a result, we decided to go with the idea that users could interact with culture “tags” whenever they want. Although we landed on the idea of culture “tags” relatively early in the design process the the design interaction changed quite a bit from the early iterations.
+              </p>
+              <p>
+                At first, we wanted users to sort tags around whether they felt positively or negatively around a certain tag. The paper prototype of an interface for doing this can be seen below:
+              </p>
+              <img src="images/finalrefinement/OriginalTags.jpg" width="400px"/>
+              <p>
+                In this case, users would have to say that they feel positively about certain tags and negatively about others. In user testing, there was quite a bit of confusion about what what it meant to tag something as negative or positive. For example, does it mean the same thing to feel negatively about parties and to feel negatively about tea? For the purposes of room draw, is one more important? In the end, we decided on the more dimensional approach to ranking tags that lets users rank tags all the way from they can’t live near someone who supports this tag to they need to live near people who support this tag. This cleared up the confusion caused by having people sort tags into just two categories.
+              </p>
+              <p>
+                Another interaction that we spend a lot of time considering is how to visualize what tags a double or suite has in common and one that they disagree on. Our initial way to visualize this was to just show users how others had organized their tags into two grouped and provide some sort of heatmap that reflected net agreement. Pictures of these can be seen below:
+              </p>
+              <img src="images/finalrefinement/Card.jpg" width="400px"/>
+              <img src="images/finalrefinement/Heatmap.jpg" width="400px"/>
+              <p>
+                In this implementation, although users can infer conflicts by knowing how they sorted the tags, and can get a net agreement score, there is no way for users to easily see which tags they agree on. Since being a cultural match is so important for people at Olin, we need to make it easy to see which culture tags are conflicting and which match in a particular situation, especially for tags that especially important to our users. As a result, a design that requires users to infer conflicts and agreements will not meet our users needs. To do this, we decided on allowing users to compare rankings on tags with another user as well as seeing average tag agreement on the dorm heatmap. A picture of the current interface for this can be seen below:
+              </p>
+              <img src="images/finalrefinement/CurrentTagCompare.png" width="400px"/>
+              <img src="images/finalrefinement/CurrentHeatMap.png" width="400px"/>
+              <p>
+                To test our design, we built a prototype of our tool. Detailed documentation on the prototype can be found below. Our prototype can be found at <a href="http://derecho.herokuapp.com/">http://derecho.herokuapp.com/</a>
+              </p>
+              <h5>The Prototype</h5>
+              <h6>Login Page</h6>
+              <img src="" width="400px"/>
+              <a href="images/finalrefinement/login.png">
+                <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                  <img src="images/finalrefinement/login.png" style="width: 100%"/>
+                  <div class="mdl-card__supporting-text">
+                    The login page for our prototype
+                  </div>
+                </div>
+              </a>
+              <p>                
+                When users first open our webapp, they will encounter a login screen. On this page, they can create a username and password for themselves and then log in to our app. For example, a user could use the username/password combination sophiaseitz and testing. After inputting this information and pressing the login button, users will be taken to the landing screen.
+              </p>
+              <h6>Landing Screen</h6>
+              <p>
+                The landing screen is a view that contains a map of one floor of a dorm. The floor that is displayed is chosen with the following logic: if a user has placed a pin in a room, that floor of the dorm is displayed. If the user is a rising senior or junior, then the first floor of East Hall is displayed. Otherwise, if the user is a rising sophomore, the first floor of West Hall is displayed. Additionally, there is a banner on the top of the screen that allows users to switch between floors and dorms or logout of the webapp. When a user clicks on one of the floors, the map will transition to that floor, and this particular floor will be highlighted on the banner. At the start, whichever floor the user is on will be highlighted.
+              </p>
+              <a href="images/finalrefinement/landingscreen.png">
+                <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                  <img src="images/finalrefinement/landingscreen.png" style="width: 100%"/>
+                  <div class="mdl-card__supporting-text">
+                    The landing screen of our webapp. Note that in this particular landing screen the user has already ranked some tags. This would not be the case for a new user who is logging on for the first time. Additionally, if a user logs on for the first time, rooms would appear blank.
+                  </div>
+                </div>
+              </a>
+              <p>
+                Along with the map of one floor of a dorm, there is also a “card” that displays user culture information, settings, and notifications. The tab currently selected is the user culture information tab. This tab contains the users and roommates name, currently selected room, and tags that they have interacted with. If users have not interacted with any tags, then the tags section will be blank, and they will only be able to see a search bar that has the words “search or add tag”. If they have interacted with tags, then this search bar will appear as well as the tags that they have ranked. In this case, the tags will be arranged from “need” to “can’t stand”, and a user will scroll the card.
+              </p>
+              <p>
+                From this view, the user has a few possible actions, they can search or add tags, explore the dorms, view notifications, or view/change settings.
+              </p>
+              <h6>Add/Search Tags</h6>
+              <p>
+                Here, a user can search for a tag in the search box. If they find the tag, they can click on the tag to add it to their list of tags that they’ve ranked. If there are no tags that match the user’s description, they have the option of adding that tag to the master list of tags users can interact with.
+              </p>
+              <a href="images/finalrefinement/tagsearcht.png">
+                <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                  <img src="images/finalrefinement/tagsearcht.png" style="width: 100%"/>
+                  <div class="mdl-card__supporting-text">
+                    A user searching for tags.
+                  </div>
+                </div>
+              </a>
+              <p>
+                When a user clicks on the search box, before they type anything, the search box will suggest that tags that that a user has not interacted with. These will be the five most popular tags that a user has not interacted with. This is shown below:
+              </p>
+              <a href="images/finalrefinement/TagSearch.png">
+                <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                  <img src="images/finalrefinement/TagSearch.png" style="width: 100%"/>
+                  <div class="mdl-card__supporting-text">
+                    Displaying the five most popular tags.
+                  </div>
+                </div>
+              </a>
+              <p>
+                Once a user selects a tag, it should appear at the top of their tags list until they rank it. Currently, however, in our prototype, newly added tags appear at the bottom of the tags list. Users can rank tags by dragging the indicator from need to have to need to avoid.
+              </p>
+              <a href="images/finalrefinement/addedtag.png">
+                <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                  <img src="images/finalrefinement/addedtag.png" style="width: 100%"/>
+                  <div class="mdl-card__supporting-text">
+                    Now, a user has added a tag.
+                  </div>
+                </div>
+              </a>
+              <p>
+                Any time a user changes their ranking on an existing tag or ranks a new tag, the heat map will update to reflect the current net agreement/disagreement score for each visible room.
+              </p>
+              <h6>Settings</h6>
+              <p>
+                A user can also click on the settings tab on the card beside the map of the dorms. From this tab, users can choose which events they would like to get email notifications for (for example, when someone else has placed their pin in a room that is currently selected by the current user or when there is a new member in the user’s hallway). In this page, a user can also input the methods by which they would prefer to be contacted, like slac, email, text for example, and rank their prefered methods of communications. This is currently unimplemented, but below is a picture of wireframes depicting what we plan to have in the settings tab:
+              </p>
+              <a href="images/finalrefinement/settings.png">
+                <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                  <img src="images/finalrefinement/settings.png" style="width: 100%"/>
+                  <div class="mdl-card__supporting-text">
+                    The wireframe of the settings tab. We would implement in the future
+                  </div>
+                </div>
+              </a>
+              <h6>Notifications</h6>
+              <p>
+                A user can also click on the notifications tab at the top of the card to view their current notifications. This screen looks something like the facebook notification dropdown, and displays system notifications to the user. These notifications are added whenever an important change occurs in their hallway or whenever a different user places a pin their room.
+              </p>
+              <a href="images/finalrefinement/notifications.png">
+                <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                  <img src="images/finalrefinement/notifications.png" style="width: 100%"/>
+                  <div class="mdl-card__supporting-text">
+                    The wireframe of the notifications tab with a few example notifications
+                  </div>
+                </div>
+              </a>       
+              <h6>Switch Floors</h6>
+              <p>
+                Users can browse through different dorm floors using the menu bar at the top of the screen. Clicking on a particular floor on the bar will display the map of that floor and the floor name will be bolded.
+              </p>
+              <a href="images/finalrefinement/differentfloor.png">
+                <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                  <img src="images/finalrefinement/differentfloor.png" style="width: 100%"/>
+                  <div class="mdl-card__supporting-text">
+                    Users can navigate to different floors. Note that in our prototype, many people live on all the floors. This would clearly not be true of the final product.
+                  </div>
+                </div>
+              </a>
+              <h6>Hover</h6>
+              <p>
+                When a user hovers over a room where a pin has been placed, a small pop-up appears telling the user who placed their pin in that room.
+              </p>
+              <a href="images/finalrefinement/hover.png">
+                <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                  <img src="images/finalrefinement/hover.png" style="width: 100%"/>
+                  <div class="mdl-card__supporting-text">
+                    The hover “popup”
+                  </div>
+                </div>
+              </a>
+              <h6>Compare</h6>
+              <p>
+                The comparison tool is designed for comparing culture against individual rooms. When a user clicks on a room, there is a button in the top right corner of the preview card which allows users to compare the user’s tag preferences to those of another room or suite. To show this, gray indicators are overlaid on the tag sliders to represent the preference of the room or suite being inspected.
+              </p>
+              <a href="images/finalrefinement/compare.jpg">
+                <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                  <img src="images/finalrefinement/compare.jpg" style="width: 100%"/>
+                  <div class="mdl-card__supporting-text">
+                    Users will also be able to compare their tag ratings with other uses to get a more in-depth view of how they compare with others. 
+                  </div>
+                </div>
+              </a>
+              <h6>Selecting room</h6>
+              <p>
+                When a user clicks on a room, there is a button in the preview card which allows users to select that room. To ensure that users do not accidently select a room, users have to then select a confirmation button. After doing so, the user’s name will appear along with the students who have also selected that room. Those students will receive a notification that someone else is also interested in that room.
+              </p>
+              <a href="images/finalrefinement/inspect.png">
+                <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                  <img src="images/finalrefinement/inspect.png" style="width: 100%"/>
+                  <div class="mdl-card__supporting-text">
+                    The card that appears when users click on a room to get more information
+                  </div>
+                </div>
+              </a>
+              <h6>Contact Information</h6>
+              <p>
+                When a user clicks on a room, there is a “contact information button” which allows the user to connect to the students who have place their pins on that room. If the preferred method of connecting to them has not been indicated in the settings, the user will be directed to email them to their olin email accounts. We have chosen to not to reinvent the wheel as it comes to communication by building an in-app communication tool; Olin has so many ways of communication, and adding another method would likely not be utilized. This, however, is an area that we are presently not sure about, and are investigating other options for in-app communication.
+              </p>
+              <a href="images/finalrefinement/contactinfo.png">
+                <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                  <img src="images/finalrefinement/contactinfo.png" style="width: 100%"/>
+                  <div class="mdl-card__supporting-text">
+                    Displaying users’ contact information
+                  </div>
+                </div>
+              </a>
+              <h5>Refining the prototype</h5>
+              <h6>Making sure the prototype is easy to use</h6>
+              <p>
+                After building the prototype, we solicited “expert” feedback in the form of a Heuristic evaluation. This feedback took the form of identifying where our prototype violated design principles. Our feedback consisted of five major themes: consistency in the app, the use of color, unclear icons, flow and missing functionality. We feel that we have addressed most of these issues and, if time permitted, would continue to work on the ones we have not addressed.
+              </p>
+              <h6>User Interface Consistency</h6>
+              <p>
+                To address the issue that various components of our app were not consistent in their appearance, the visual aesthetic of the app has had a complete overhaul. The goal of this was to make the app more attractive and clear. We now use standardized icons from google’s material icons, these we have found are much more familiar to our users than our previous home drawn icons.
+              </p>
+              <h6>Color</h6>
+              <p>
+                In our first prototype, we had not used color as intentionally as we could have, and our color scheme was not intuitive. In our first prototype, we used the same colors to represent different functionality that was not related. This was feedback that we were particularly interested in investigating, as members of the team were curious about how color can be used well to provide information. In our final prototype, we have greatly reduced the use of unnecessary color, using color only to indicate agreement or disagreement in cultural preferences and to show that a room has been pinned.
+              </p>
+              <h6>Unclear Icons</h6>
+              <p>
+                Additionally, it became clear through heuristic evaluation that we did not have the most clear icons. This is still a work in progress, and we have not finished designing icons that are as clear as they could be. This work, however, would be finished before releasing the prototype to the Olin student population. For example, previously, the contact information and compare tags buttons were not clear.
+              </p>
+              <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                <img src="images/finalrefinement/oldcompare.png" style="width: 100%"/>
+                <img src="images/finalrefinement/newcompare.png" style="width: 100%"/>
+                <div class="mdl-card__supporting-text">
+                  Although we believe that this change in buttons represents an improvement over the previous compare tags button, we are still not entirely satisfied with this button.
+                </div>
+              </div>
+              <div class="mdl-shadow--2dp float-image" style="width: 400px">
+                <img src="images/finalrefinement/newcontactinfo.png" style="width: 100%"/>
+                <img src="images/finalrefinement/oldcontactinfo.png" style="width: 100%"/>
+                <div class="mdl-card__supporting-text">
+                  Here, we are satisfied with the new button and believe that the change from the old contact information button to the new contact information button makes the prototype easier to use. 
+                </div>
+              </div>
+              <p>
+                After changing these icons, we have a better contact information icon, but we still need to add a better comparison icon.
+              </p>
+              <h6>Flow</h6>
+              <p>
+                Another issue identified as a result of expert evaluation was that there were some flow issues in our app. For example, in our first prototype, it was not always easy to “back out” of an unintended interaction. We have since corrected this in our current prototype. In future revisions, we would also focus on identifying other flow-related issues, and correcting them. There is still some work to be done in this regard.
+              </p>
+              <h6>Missing Functionality</h6>
+              <p>
+                Additionally, our prototype is not fully functional yet. We are still working on thinking through the tag compare interaction, and making that as intuitive as possible. Additionally, we have not finished adding support for West Hall yet, but that would be implemented before this tool moved past the prototype stage. After making or continuing to make these changes described above, we are confident that this tool will allow Olin students to have more informed communications around hallway culture during the room draw process.
+              </p>
+              <h6>How does it address our user’s needs?</h6>
+              <p>
+                We believe that our tool will greatly benefit the student body by enabling more informed communication around hallway culture. Additionally, we are confident that we have designed the tool to be as flexible as possible, so that each of our personas can and will interact with it. Below are stories of how each of our four personas will use the tool:
+              </p>
+              <h6>Ruth (Hallway Organizer)</h6>
+              <p>
+                Since Ruth has the stressful job of coordinating most of the “Two North” suites in East hall, the tool will be useful to her in allowing her to check whether there are any other suites not belonging to her group also wants to live there, without constantly having to go back to the location where the pin board is placed.  It will be less stressful for her knowing that she could easily and quickly check whether the hallway is still secure. She can also feel assured that the people in her group can quickly view her decisions in which suites she placed them in the “Two North” hallway and if multiple groups have issues with where they are living, she could make easily updates with the tool without having to run back and forth to the pinboard.
+              </p>
+              <p>
+                Another feature of this tool that will be beneficial to Ruth is the ability view culture of different suites with tags. Since she is organizing a party hallway, she needs to know that the doubles and other suites in the hallway would not be against partying. She can check quickly through the color map whether people interested in living in these rooms are compatible with the rest of her group and use the “compare tag” feature to specifically check their level of agreement on the party tag. If there is a suite or a double who stated that they dislike parties, she can view their preferred method of contact and inform them that she is planning to host parties in the hallway next semester so that they could either compromise or move their pin to a new location.
+              </p>
+              <h6>Shep (Hallway Member)</h6>
+              <p>
+                While it is unlikely that Shep will interact with the tags and as a result will not benefit from the dorm heatmap, he or his roommate will still use the tool to place their pin in the room he wants. He can also use our tool to easily check to make sure that his group has not moved, and adjust his pin if he should want to.
+              </p>
+              <h6>Dylan (Indifferent Roommates)</h6>
+              <p>
+                Dylan is least likely to among the personas to use the tool since he does not care who he is living with nor where he will live. That being said, we still believe that he will benefit from our tool. Since he wants to put as little effort into the room draw process, he will benefit because he no longer has to walk all the way from the Dining Hall Mezzanine to place a pin on an empty room -- he just has to log in to our too.
+              </p>                 
+              <h6>Nancy (Passionate Independent)</h6>
+              <p>
+                Since Nancy will like to live in a hallway with at least some of her friends, she will use the tool often to make sure that some of her friends will be living close to her and that none of them have switched their room preferences to another hallway. Since she is social and enjoys social gatherings, she will have indicated her tag preferences and used the color map and “compare tags” to ensure that the other members of the hallway share similar interests.
+              </p>
+            </div>
+          </section>
+        </div><!-- END FINAL REFINEMENT -->
 
         <footer class="mdl-mega-footer">
           <div class="mdl-mega-footer--middle-section">
